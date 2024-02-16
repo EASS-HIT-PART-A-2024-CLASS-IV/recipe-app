@@ -1,0 +1,1 @@
+# Endpoints for managing user recipes (create, update, delete, add to favorite etc..)

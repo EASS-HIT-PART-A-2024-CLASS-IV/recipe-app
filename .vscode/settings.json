@@ -1,0 +1,8 @@
+{
+    "python.analysis.extraPaths": [
+        "./services",
+        "./models",
+        "./interfaces",
+        "./api/api_v1/endpoints"
+    ]
+}
