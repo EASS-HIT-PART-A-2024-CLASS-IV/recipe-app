@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from services.spoonacular_service.models.spoonacular_ingredient_model import IngredientModel
+from models.spoonacular_ingredient_model import IngredientModel
 
 class RecipeModel(BaseModel):
     id: int

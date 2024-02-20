@@ -1,18 +1,19 @@
 import os
-from fastapi import HTTPException
 import httpx
-from services.spoonacular_service.interfaces.spoonacular_service_interface import SpoonacularServiceInterface
+from interfaces.spoonacular_service_interface import SpoonacularServiceInterface
+from dotenv import load_dotenv
+
 
 class SpoonacularService(SpoonacularServiceInterface):
     def __init__(self):
-        self.url = "https://api.spoonacular.com";
+        load_dotenv()
+        self.url = "https://api.spoonacular.com"
+        self.apiKey = os.getenv("API_KEY")
     
     async def get_recipe_by_ingredients(self, ingredients: list[str], max_results: int):
-        api_key = os.getenv("API_KEY")
         url = f"{self.url}/recipes/findByIngredients"
-
         params = {
-            "apiKey": api_key,
+            "apiKey": self.apiKey,
             "ingredients": ingredients,
             "number": max_results
         }
@@ -23,4 +24,4 @@ class SpoonacularService(SpoonacularServiceInterface):
                 res.raise_for_status()
                 return res.json()
         except httpx.HTTPStatusError as e:
-            raise HTTPException(status_code=e.response.status_code, detail="Error fetching from spoonacular") from e
+            raise e

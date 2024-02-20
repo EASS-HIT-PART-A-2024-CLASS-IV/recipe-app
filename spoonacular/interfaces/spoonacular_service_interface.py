@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from services.spoonacular_service.models.spoonacular_recipe_model import RecipeModel
+from models.spoonacular_recipe_model import RecipeModel
 
 class SpoonacularServiceInterface:
     @abstractmethod

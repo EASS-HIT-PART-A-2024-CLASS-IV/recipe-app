@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  fastapi_app:
+    build: ./recipe_app_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - SPOONACULAR_MICROSERVICE_URL=http://spoonacular:8001
+    depends_on:
+      - spoonacular
+
+  spoonacular:
+    build: ./spoonacular
+    ports:
+      - "8001:8001"
