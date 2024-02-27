@@ -51,4 +51,4 @@ To get the Recipe App running on your machine, follow these steps:
     ```
 
 
-This will build and start all the necessary containers for the application to run. Once the process is complete, you can access the application's features through http://localhost:8000.
+This will build and start all the necessary containers for the application to run. Once the process is complete, you can access the application's features through http://localhost:8000/docs.
