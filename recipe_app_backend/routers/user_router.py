@@ -1,1 +1,0 @@
-# Endpoints for registering and logging in users

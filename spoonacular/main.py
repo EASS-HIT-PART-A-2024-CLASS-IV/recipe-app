@@ -10,3 +10,12 @@ async def find_by_ingredients(ingredients: list[str] = Query(...), max_results: 
         return await spoonacular_service.get_recipe_by_ingredients(ingredients, max_results)
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+    
+    
+@app.get("/recipes/{id}/analyzedInstructions")
+async def get_analyzed_instructions(id: int):
+    print(f'id from spoonacular micro service: {id}')
+    try:
+        return await spoonacular_service.get_analyzed_instructions(id)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
