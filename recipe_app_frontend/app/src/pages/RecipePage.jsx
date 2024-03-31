@@ -42,7 +42,7 @@ export default function RecipePage() {
     if (recipeId) {
       fetchRecipeData();
     }
-  }, [recipeId, apiUrl, setNewAlert]);
+  }, [recipeId]);
 
   return (
     <BasicWrapper width="100%">
