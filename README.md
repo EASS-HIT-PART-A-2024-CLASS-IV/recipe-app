@@ -61,6 +61,9 @@ The backend microservice exposes the application's features through an API, whic
 - The **Spoonacular microservice** fetches recipes and recipe details from the Spoonacular API.
 - The **Recipe-app fronend** built in React.js to provide a great user experience.
 
+![image](https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/recipe-app/assets/66397204/689da216-fbf5-42d9-b4c6-2dc118a16958)
+
+
 
 
 
