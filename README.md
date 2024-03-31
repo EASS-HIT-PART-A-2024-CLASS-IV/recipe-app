@@ -46,7 +46,7 @@ To get the Recipe App running on your machine, follow these steps:
     
 5. **Access the frontend** via http://localhost:3000
     
-This will build and start all the necessary containers for the application to run. Once the process is complete, you can view and test the backend endpoints at http://localhost:8000/docs.
+This will build and start all the necessary containers for the application to run. Once the process is complete, you can view and use the application at http://localhost:3000.
 
 ## Technical Details
 
