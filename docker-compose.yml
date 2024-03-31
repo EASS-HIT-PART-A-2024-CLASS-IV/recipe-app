@@ -24,7 +24,10 @@ services:
       - SECRET_KEY=LySv4cLESCDuwoeHb9XW3vEsQQ7AB8AR7fcKzl0CO3Y=
       - ALGORITHM=HS256
   frontend:
-    build: ./recipe_app_frontend/app
+    build:
+      context: ./recipe_app_frontend/app
+      args:
+        VITE_BASE_API_URL: http://localhost:8000
     ports:
       - "3000:80"
     depends_on:
