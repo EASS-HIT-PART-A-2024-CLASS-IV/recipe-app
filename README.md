@@ -4,11 +4,13 @@ Welcome to Recipe App, your go-to tool for discovering and organizing your favor
 
 ## Features
 
-This application integrates with the Spoonacular API, allowing you to search for recipes based on ingredients and much more. With Recipe App, you can:
+This application integrates with the [Spoonacular API](https://spoonacular.com/). With Recipe App, you can:
 
 1. **Search for recipes** by providing a list of ingredients.
 2. **Get detailed instructions** for preparing each recipe you find.
 3. **Manage your recipes** by adding them to your favorites list for easy access later.
+
+All within an advanced UI built with React.js for the best user experience.
 
 ## Getting Started
 
@@ -19,12 +21,12 @@ To get the Recipe App running on your machine, follow these steps:
    ```bash
    git clone https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/recipe-app.git
    ```
-2. **Navigate** to the project's folder
+2. **Navigate to the project's folder**
 
    ```bash
    cd recipe-app
    ```
-3. **_IMPORTANT_** prerequisite
+3. **_IMPORTANT_ prerequisite**
 
    Due to security concerns, an API key to access the Spoonacular API is not provided in the repository. To use the Spoonacular features within this app, you'll need to obtain an API key. You can get one by [signing up on the Spoonacular API website](https://spoonacular.com/food-api/console#Dashboard) or by contacting me directly.
 
@@ -58,5 +60,7 @@ The backend microservice exposes the application's features through an API, whic
 - The **database microservice** performs CRUD operations on users and recipes.
 - The **Spoonacular microservice** fetches recipes and recipe details from the Spoonacular API.
 - The **Recipe-app fronend** built in React.js to provide a great user experience.
+
+
 
 
