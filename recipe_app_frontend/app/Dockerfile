@@ -7,13 +7,18 @@ WORKDIR /app
 COPY package.json ./
 
 COPY vite.config.js ./
-COPY .env ./
 
 # Install dependencies
 RUN npm install
 
 # Copy your source files
 COPY . .
+
+# Declare the argument
+ARG VITE_BASE_API_URL
+
+# Set the argument as an environment variable for the build script
+ENV VITE_BASE_API_URL=$VITE_BASE_API_URL
 
 # Build your Vite project
 RUN npm run build
