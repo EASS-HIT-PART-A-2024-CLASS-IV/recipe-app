@@ -26,19 +26,8 @@ To get the Recipe App running on your machine, follow these steps:
    ```bash
    cd recipe-app
    ```
-3. **_IMPORTANT_ prerequisite**
-
-   Due to security concerns, an API key to access the Spoonacular API is not provided in the repository. To use the Spoonacular features within this app, you'll need to obtain an API key. You can get one by [signing up on the Spoonacular API website](https://spoonacular.com/food-api/console#Dashboard) or by contacting me directly.
-
-   Once you have your API key, follow these steps to configure it within the Spoonacular microservice:
    
-   1. Navigate to the `spoonacular` folder.
-   2. Create a file named `.env`.
-   3. Add your API key to this file in the following format: `API_KEY=YOUR_KEY_HERE`.
-   
-   Ensure that you replace `YOUR_KEY_HERE` with the actual API key you obtained.
-   
-4. **Start the application** using Docker Compose:
+3. **Start the application** using Docker Compose:
 
     ```bash
     docker-compose up
