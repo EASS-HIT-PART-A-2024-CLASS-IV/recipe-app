@@ -14,7 +14,7 @@ class SpoonacularService(SpoonacularServiceInterface):
         url = f"{self.url}/findByIngredients"
         params = {
             "apiKey": self.apiKey,
-            "ingredients": ingredients,
+            "ingredients": ',+'.join(ingredients),
             "number": max_results
         }
 

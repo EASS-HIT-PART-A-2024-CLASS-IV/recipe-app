@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 services:
   fastapi_app:
     build: ./recipe_app_backend
@@ -23,3 +23,9 @@ services:
     environment:
       - SECRET_KEY=LySv4cLESCDuwoeHb9XW3vEsQQ7AB8AR7fcKzl0CO3Y=
       - ALGORITHM=HS256
+  frontend:
+    build: ./recipe_app_frontend/app
+    ports:
+      - "3000:80"
+    depends_on:
+      - fastapi_app
