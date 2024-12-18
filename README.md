@@ -1,3 +1,4 @@
+
 # Recipe App
 
 Welcome to Recipe App, your go-to tool for discovering and organizing your favorite recipes!
@@ -11,6 +12,10 @@ This application integrates with the [Spoonacular API](https://spoonacular.com/)
 3. **Manage your recipes** by adding them to your favorites list for easy access later.
 
 All within an advanced UI built with React.js for the best user experience.
+
+## Video
+
+[Click to see a demo video](https://youtu.be/gMtkdQNcs7U)
 
 ## Getting Started
 
@@ -54,10 +59,6 @@ The backend microservice exposes the application's features through an API, whic
 ## Illustration
 
 ![image](https://github.com/EASS-HIT-PART-A-2024-CLASS-IV/recipe-app/assets/66397204/689da216-fbf5-42d9-b4c6-2dc118a16958)
-
-## Video
-
-[Click to see a demo video](https://youtu.be/gMtkdQNcs7U)
 
 
 
